@@ -1,0 +1,110 @@
+/*FORMULARIO DE RESERVA*/
+
+*{
+    padding: auto;
+    margin: auto;
+}
+body{
+    background: url("../img/fondo.jpg") center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    margin-top: 10px;
+    text-align: center;
+    font-family: Berlin Sans FB;
+    font-size: 60px;
+    font-style: oblique;
+    letter-spacing: 6px;
+    color: #ff8b00;
+}
+#menu{
+    display:flex;
+    justify-content: center;
+    margin-right: 150px;
+    margin-top: 20px;
+    word-spacing: 20px;
+}
+#menu a{
+    font-family: Berlin Sans FB;
+    text-decoration: none;
+    color: #ffc60b;
+    font-size: 25px;
+    letter-spacing: 5px;
+    background: #feffdb;    
+    padding: 5px;
+}
+#menu a:hover{
+    background-color: orange;
+    color: white;
+}
+hr{
+    color: #96bb7c;
+    height: 1px;
+}
+
+#container{
+    padding: 20px;
+    background:#feffdb;
+    opacity: 0.8;
+    width: 470px;
+    height: 450px;
+    margin-top: 60px;
+    border-radius: 15px;
+    display: block;
+}
+#frm{
+    /*text-align: center;*/
+    font-size: 20px;
+    font-family: Berlin Sans FB;
+    color:#2b4f60;
+}
+#container input{
+    padding: 2px 2px;
+    /*width: 150px;*/
+    
+}
+table{
+    border-spacing: 10px;
+}
+#adicionales{
+    margin-left: -40px;
+}
+li{
+    list-style: none;
+    display: inline-flex;
+}
+.inp{
+    width: 200px;
+    height: 20px;
+    text-align: center;
+}
+select{
+    width: 50px;
+}
+.pg{
+    /*justify-content: ;*/
+}
+.img{
+    display: inline-block
+}
+#btn{
+    background: #ff8b00;
+    width: 150px;
+    border-radius: 10px;
+    border: solid #ff8b00;
+}
+footer{
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    font-family: Berlin Sans FB;
+    font-size: 20px;
+    color: #ff8b00;
+    text-align: center;
+    padding: 10px;
+    justify-content: center;
+    letter-spacing: 3px;
+    background: #feffdb;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--El usuario debe ingresar el rut y nombre completo, indique un ejemplo para el rut (10.200.300-4), máximo 12 caracteres.
+
+·         El usuario deberá seleccionar la capacidad de la cabaña, el mínimo es 2 y máximo 10 personas, solo puede seleccionar o ingresar números pares (2, 4, 6, 8 ó 10).
+
+·         El usuario deberá ingresar fecha de llegada a la cabaña, esta fecha debe ser como mínimo a partir del día siguiente.
+
+·         El usuario deberá ingresar la hora de llegada a la cabaña, la cual es entre las 9:00 y 18:00 hrs.
+
+·         El usuario podrá seleccionar servicios adicionales al alojamiento (los que desee), la empresa ofrece servicios, tales como: Desayuno, Almuerzo, Cena, Traslados, Tours por la zona.
+
+·         El usuario deberá indicar la forma de pago, se aceptan pagos con tarjeta de crédito, débito o transferencia.
+
+Se solicita:
+
+·         Crear un formulario web identificando los inputs correspondientes.
+
+·         Realizar las validaciones requeridas, todos los campos son obligatorios.
+
+·         Crear una hoja de estilo virtual CSS según su criterio considerando los elementos vistos en la clase de la semana 3.-->
+<html>
+    <head>
+        <title>Reserva</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css\reserva.css"/>
+    </head>
+    <body id="reserva">
+            <body id="contenedor">
+        <header>Cabañas "El Descanso"</header>
+        <nav id="menu">
+            <a href="index.html">Inicio</a>
+            <a href="cabanas.html">Cabañas</a>
+            <a href="reserva.html">Reservas</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <hr>
+        <div id="container">
+            <form id="frm">
+                <table>
+                <tr>
+                    <td><label>Ingresa tu nombre: </label></td>
+                    <td><input type="text" name="nombre" placeholder="Nombre y Apellido" maxlength="30" required="" autofocus="" class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label>R.U.T.: </label></td>
+                    <td><input type="number" name="RUT" placeholder="RUT sin puntos ni guines" maxlength="12" minlength="8" required=""  class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label>Capacidad:</label></td>
+                    <td>
+                        <select required="">
+                            <option>2</option>
+                            <option>4</option>
+                            <option>6</option>
+                            <option>8</option>
+                            <option>10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Fecha de inicio: </label></td>
+                    <td><input type="date" required="" class="inp" min="2021-05-14"></td>
+                </tr>
+                <tr>
+                    <td><label>Hora de llegada: </label></td>
+                    <td><input type="time" required="" min="09:00:00" max="18:00:00" class="inp"></td>
+                </tr>
+                <tr>
+                    <td><label>Adicionales:</label></td>
+                    <td>
+                        <div id="adicionales">
+                            <ul>
+                                <li><input type="checkbox" id="des" required="">Desayuno</li>
+                                <li><input type="checkbox" id="alm" required="">Almuerzo</li>
+                                <li><input type="checkbox" id="cen" required="">Cena</li>
+                                <li><input type="checkbox" id="tra" required="">Traslados</li>
+                                <li><input type="checkbox" id="tour" required="">Tours</li>
+                                <li><input type="checkbox" id="ninguno" required="">Ninguno</li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Forma de pago: </label></td>
+                    <td><input type="radio" name="pago" class="pg"><img src="img\transf.png" width="85" height="50" class="img">
+                    <input type="radio" name="pago" class="pg"><img src="img\creditp.png" width="85" height="50" class="img">
+                    <input type="radio" name="pago" class="pg"><img src="img\webpay.png" width="85" height="50" class="img"></td>
+                </tr>
+                <tr>&nbsp;</tr>
+                <tr>&nbsp;</tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="PAGAR" id="btn"></td>
+                </tr>
+            </table>        
+            </form>
+        </div>
+        <footer>Todos los derechos reservado por Cabañas "El Descanso" S.A</footer>
+    </body>
+</html>
